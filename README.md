@@ -25,6 +25,16 @@ Add `app:mirrorSrc="true"` or `app:mirrorBackground="true"` in xml files, resour
     android:background="@drawable/bg_chat"
     app:mirrorBackground="true" />
 ```
+Don't forget init this library in application. `RtlImageLibrary.inject(this)`
+```kt
+class RtlApplication : Application() {
+
+    override fun onCreate() {
+        super.onCreate()
+        RtlImageLibrary.inject(this)
+    }
+}
+```
 ## Download
 1. Add the JitPack repository to your build file
 ```gradle
