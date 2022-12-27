@@ -26,7 +26,7 @@ Add `app:mirrorSrc="true"` or `app:mirrorBackground="true"` in xml files, resour
     app:mirrorBackground="true" />
 ```
 Don't forget init this library in application. `RtlImageLibrary.inject(this)`
-```kt
+```kotlin
 class RtlApplication : Application() {
 
     override fun onCreate() {
