@@ -50,3 +50,6 @@ dependencies {
 ```
 ## Custom View ?
 If you have custom view, this library's key code is `drawable.setAutoMirrored(true)`, use it!
+
+## Known Issues
+May conflict with other libraries that use `LayoutInflater.Factory2`
